@@ -72,7 +72,9 @@ Definition of the different states and their transition (transition functions)
 
 
 ## Task
+Img apple search app
 
+https://github.com/EdgarCastrillo/apple-search-app/blob/master/apple-search-app.png
 
 ## Links
 
