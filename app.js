@@ -21,6 +21,7 @@ function main() {
     activateRouter();
     addListennersToNavbar();
 
+
     function addListennersToNavbar() {
         var anchors = document.querySelectorAll('a');
         anchors.forEach(function(anchor) {

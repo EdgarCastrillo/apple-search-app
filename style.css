@@ -16,7 +16,7 @@ html {
 :root {
     --primary-color: black;
     --secondary-color: black;
-    --font-color: #black;
+    --font-color: black;
     --bg-color: white;
     --heading-color: white;
 }
@@ -26,7 +26,7 @@ html {
     --secondary-color: white;
     --font-color: white;
     --bg-color: black;
-    --heading-color: white;
+    --heading-color: black;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 h1 {
     line-height: 1.3em;
     font-size: 2.3em;
-    margin: 0px 0 40px 0;
+    margin: 0px 0 30px 0;
     color: var(--secondary-color);
 }
 
@@ -68,10 +68,16 @@ h2 {
     margin: 0;
 }
 
-h3 {}
+h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
 
 p {
     margin: 0;
+    color: #636363;
+    font-size: 0.8em;
 }
 
 a {
@@ -97,7 +103,7 @@ a {
 
 #site-header nav {
     display: flex;
-    padding: 12px 20px;
+    padding: 5px 20px;
     display: flex;
     align-items: center;
 }
@@ -106,8 +112,6 @@ a {
     margin: 0;
     padding: 0px 10px;
     list-style-type: none;
-    align-self: flex-end;
-    margin-bottom: 3px;
 }
 
 #site-header nav ul li {
@@ -116,12 +120,10 @@ a {
     align-self: flex-end;
 }
 
-#site-header nav ul li a {
-    margin-bottom: 10px;
-}
+#site-header nav ul li a {}
 
 #site-header img {
-    width: 36px;
+    width: 30px;
     height: 100%;
     margin-right: 10px;
 }
@@ -134,7 +136,7 @@ a {
 
 #site-main {
     padding: 35px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .container {
@@ -234,7 +236,7 @@ a {
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 30px;
     position: relative;
     width: 60px;
 }
@@ -258,11 +260,11 @@ a {
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 22px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    width: 22px;
 }
 
 input:checked+.slider {
@@ -286,18 +288,20 @@ input:checked+.slider:before {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 35px;
 }
 
 .card-album img {
-    width: 85%;
+    width: 35%;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 4px 4px 10px #d7d7d7;
 }
 
 .card-album {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: row1-start grid-row-end: 3;
+    float: left;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
 }

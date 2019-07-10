@@ -26,18 +26,3 @@ Layout.prototype.getContainers = function() {
     this.header = document.querySelector('#site-header')
     this.main = document.querySelector('#site-main')
 };
-
-
-// Switch dark & light mode
-
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
