@@ -117,7 +117,8 @@ a {
 #site-header nav ul li {
     margin: 0;
     list-style-type: none;
-    align-self: flex-end;
+    display: flex;
+    align-items: center;
 }
 
 #site-header nav ul li a {}

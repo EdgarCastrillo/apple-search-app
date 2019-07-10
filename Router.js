@@ -37,4 +37,9 @@ Router.prototype.generateAlbumsPage = function(parentElement) {
     this.page.generate();
 };
 
+Router.prototype.generateMoviesPage = function(parentElement) {
+    this.page = new MoviesPage(parentElement);
+    this.page.generate();
+};
+
 var routerInstance = new Router();
