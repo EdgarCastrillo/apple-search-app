@@ -24,7 +24,7 @@ function LandingPage(parentElement) {
 LandingPage.prototype.generate = function() {
     this.elements = `
       <header class="title">
-        <h1>What are you looking for?</h1>
+        <h1 class="flow">What are you looking for?</h1>
       </header>
   `;
     this.render();
@@ -40,10 +40,10 @@ LandingPage.prototype.generate = function() {
     this.elements += `
                     </section>
                     <div class="landing-page-bottom">
-                    <p>Stream 50 million songs ad‑free.</p>
-                    <p>Our vision for television.</p>
-                    <p>Get exclusive and original content.</p>
-                    <p>Download your favorite apps.</p>
+                    <p class="landing-page-bottom-p1">Stream 50 million songs ad‑free.</p>
+                    <p class="landing-page-bottom-p2">Our vision for television.</p>
+                    <p class="landing-page-bottom-p3">Get exclusive and original content.</p>
+                    <p class="landing-page-bottom-p4">Download your favorite apps.</p>
                     </div>
     `;
     this.render();
