@@ -60,9 +60,18 @@ body {
 
 h1 {
     line-height: 1.3em;
-    font-size: 2.3em;
+    font-size: 2.8em;
     margin: 0px 0 40px 0;
     color: var(--primary-color);
+    margin: 10px 0 60px 0;
+    font-weight: 900;
+    text-decoration: none;
+    animation: flow 10s ease-in-out infinite;
+    background: linear-gradient(-70deg, #5E64FD, #FF50A1, #5E64FD, #FF50A1);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -166,6 +175,21 @@ a {
         padding: 35px 35px 35px 35px;
         margin-top: 85px;
     }
+    h1 {
+        margin: 10px 0 60px 0;
+        font-size: 6em;
+        font-weight: 900;
+        text-decoration: none;
+        line-height: 1.2em;
+        animation: flow 10s ease-in-out infinite;
+        background: linear-gradient(-70deg, #5E64FD, #FF50A1, #5E64FD, #FF50A1);
+        background-size: 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -237,7 +261,7 @@ a {
         grid-template-rows: 162px 162px;
         cursor: pointer;
         grid-template-columns: 1fr 1fr;
-        margin-top: 40px;
+        margin-top: 80px;
     }
 }
 @media (min-width: 768px) {
@@ -257,7 +281,7 @@ a {
         grid-template-rows: 230px;
         cursor: pointer;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 40px;
+        margin-top: 100px;
     }
 }
 
@@ -384,6 +408,7 @@ input:checked+.slider:before {
 @media (min-width: 1024px) {
     .landing-page-bottom {
         height: 40vh;
+        margin-top: 120px;
     }
     
     .card-container {
@@ -391,9 +416,38 @@ input:checked+.slider:before {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 35px;
         grid-row-gap: 35px;
+        margin-top: 100px;
     }
     
     h1 {
         margin: 10px 0 60px 0;
+        font-size: 6.8em;
+        font-weight: 900;
+        text-decoration: none;
+        line-height: 1.2em;
+        animation: flow 10s ease-in-out infinite;
+        background: linear-gradient(-70deg, #5E64FD, #FF50A1, #5E64FD, #FF50A1);
+        background-size: 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    
+    @keyframes flow {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    
+    header.title {
+        margin-top: 50px;
     }
 }
