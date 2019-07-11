@@ -10,14 +10,11 @@ function Navbar(parentElement, links, style) {
 Navbar.prototype.generate = function()  {
     //generar dinamicamente los elementos
     this.elements = `<nav>
-                        
-                       
-                      
                          <ul>`;
     this.links.forEach((link) => {
         this.elements += `
           <li>
-            <a href="#0" url=${link.url}> <img src="./img/apple-logo.png" url=${link.url} alt"Logo Apple">${link.name}</a>
+            <a href="#0" url=${link.url}> <img src="./img/apple-logo.svg" url=${link.url} alt"Logo Apple">${link.name}</a>
           </li> 
         `;
     });
@@ -31,9 +28,30 @@ Navbar.prototype.generate = function()  {
                     </nav>
     `;
     this.render();
+    this.addEventListerToSwitch();
 };
 
 Navbar.prototype.render = function()  {
     //añadir elementos al DOM
     this.parentElement.innerHTML = this.elements;
 };
+
+Navbar.prototype.addEventListerToSwitch = function() {
+    var inputSwitch = document.querySelector('#checkbox');
+    var image = document.querySelector('nav img');
+    const changeDarkMode = () => {
+        if (image.attributes.src.value === './img/apple-logo-white.svg') {
+            image.attributes.src.value = './img/apple-logo.svg'
+        } else {
+            image.attributes.src.value = './img/apple-logo-white.svg'
+        }
+        if (inputSwitch.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    }
+    inputSwitch.addEventListener('click', changeDarkMode);
+
+
+}
