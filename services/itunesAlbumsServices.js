@@ -1,7 +1,7 @@
 'use strict';
 
 function ItunesAlbumService() {
-    this.baseUrl = 'https://itunes.apple.com/search?term='
+    this.baseUrl = 'https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term='
 };
 ItunesAlbumService.prototype.getAllAlbums = async function() {
     var response = await fetch(`${this.baseUrl}pop&entity=album`);
