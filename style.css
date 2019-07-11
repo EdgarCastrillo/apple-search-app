@@ -19,6 +19,7 @@ html {
     --font-color: black;
     --bg-color: white;
     --heading-color: white;
+    --border-color: #ccc;
 }
 
 [data-theme="dark"] {
@@ -393,7 +394,6 @@ input:checked+.slider:before {
 }
 .card-album {
     float: left;
-    border-top: 1px solid #000000;
     border-top: 1px solid var(--border-color);
     padding-top: 15px;
 }
