@@ -270,7 +270,7 @@ a {
     }
     
     #site-main {
-        padding: 35px 35px 35px 35px;
+        padding: 35px 45px 35px 45px;
     }
 }
 @media (min-width: 1024px) {
@@ -435,6 +435,7 @@ input:checked+.slider:before {
         -webkit-text-fill-color: transparent;
         display: flex;
         justify-content: center;
+        text-align: center;
     }
     
     @keyframes flow {
