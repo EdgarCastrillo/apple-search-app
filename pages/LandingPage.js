@@ -39,6 +39,12 @@ LandingPage.prototype.generate = function() {
     });
     this.elements += `
                     </section>
+                    <div class="landing-page-bottom">
+                    <p>Stream 50 million songs ad‑free.</p>
+                    <p>Our vision for television.</p>
+                    <p>Get exclusive and original content.</p>
+                    <p>Download your favorite apps.</p>
+                    </div>
     `;
     this.render();
 };
