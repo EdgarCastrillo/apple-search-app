@@ -478,9 +478,22 @@ input:checked+.slider:before {
     display: flex;
     justify-content: center;
 }
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0 50%;
+    }
+}
 .loader p {
     margin: 10px 0 60px 0;
-    font-size: 6.8em;
+    font-size: 3.8em;
     font-weight: 900;
     text-decoration: none;
     line-height: 1.2em;
@@ -494,16 +507,8 @@ input:checked+.slider:before {
     justify-content: center;
     text-align: center;
 }
-@keyframes flow {
-    0% {
-        background-position: 0 50%;
-    }
-    
-    50% {
-        background-position: 100% 50%;
-    }
-    
-    100% {
-        background-position: 0 50%;
+@media (min-width: 1025px) {
+    .loader p {
+        font-size: 6.8em;
     }
 }

@@ -19,6 +19,7 @@ Navbar.prototype.generate = function()  {
                 <h2 url=${link.url}>${link.name}</h2>
             </a>
           </li> 
+          
         `;
     });
     this.elements += `</ul>
