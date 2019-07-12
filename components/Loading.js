@@ -12,7 +12,6 @@ Loading.prototype.generate = function() {
     </div>
 `
     this.render();
-    debugger;
 };
 
 Loading.prototype.render = function() {

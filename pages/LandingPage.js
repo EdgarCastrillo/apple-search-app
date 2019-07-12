@@ -40,10 +40,10 @@ LandingPage.prototype.generate = function() {
     this.elements += `
                     </section>
                     <div class="landing-page-bottom">
-                    <p class="landing-page-bottom1">Stream 50 million songs ad‑free.</p>
-                    <p class="landing-page-bottom2">Our vision for television.</p>
-                    <p class="landing-page-bottom3">Get exclusive and original content.</p>
-                    <p class="landing-page-bottom4">Download your favorite apps.</p>
+                    <p id="in-out-1">Stream 50 million songs ad‑free.</p>
+                    <p id="in-out-2">Our vision for television.</p>
+                    <p id="in-out-3">Get exclusive and original content.</p>
+                    <p id="in-out-4">Download your favourite apps.</p>
                     </div>
     `;
     this.render();
