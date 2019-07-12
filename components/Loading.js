@@ -6,8 +6,13 @@ function Loading(parentElement) {
 };
 
 Loading.prototype.generate = function() {
-    this.elements = '<p>Lose yourself in 50 million songs.</p>'
+    this.elements = `
+    <div class="loader">
+        <p>Wait...</p>
+    </div>
+`
     this.render();
+    debugger;
 };
 
 Loading.prototype.render = function() {
