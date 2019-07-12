@@ -10,6 +10,25 @@ ItunesAlbumService.prototype.getAllAlbums = async function() {
     return data.results;
 };
 
-var itunesAlbumServiceInstance = new ItunesAlbumService();
+ItunesAlbumService.prototype.getAllMovies = async function() {
+    var response = await fetch(`${this.baseUrl}comedy&entity=movie`);
+    var data = await response.json();
+    console.log(data);
+    return data.results;
+};
 
-itunesAlbumServiceInstance.getAllAlbums();
+ItunesAlbumService.prototype.getAllBooks = async function() {
+    var response = await fetch(`${this.baseUrl}comedy&entity=ebook`);
+    var data = await response.json();
+    console.log(data);
+    return data.results;
+};
+
+ItunesAlbumService.prototype.getAllApps = async function() {
+    var response = await fetch(`${this.baseUrl}games&entity=software`);
+    var data = await response.json();
+    console.log(data);
+    return data.results;
+};
+
+var itunesAlbumServiceInstance = new ItunesAlbumService();

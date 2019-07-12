@@ -42,4 +42,14 @@ Router.prototype.generateMoviesPage = function(parentElement) {
     this.page.generate();
 };
 
+Router.prototype.generateBooksPage = function(parentElement) {
+    this.page = new BooksPage(parentElement);
+    this.page.generate();
+};
+
+Router.prototype.generateAppsPage = function(parentElement) {
+    this.page = new AppsPage(parentElement);
+    this.page.generate();
+};
+
 var routerInstance = new Router();

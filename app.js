@@ -5,14 +5,9 @@ function main() {
     var layoutInstance = null;
     var navbarInstance = null;
     var links = [{
-            name: 'Search',
-            url: '/'
-        },
-        // {
-        //     name: 'Albums',
-        //     url: '/albums'
-        // }
-    ];
+        name: 'Search',
+        url: '/'
+    }, ];
 
     var rootElement = document.querySelector('#root');
 

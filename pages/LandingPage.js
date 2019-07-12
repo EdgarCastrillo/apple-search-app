@@ -12,11 +12,11 @@ function LandingPage(parentElement) {
         },
         {
             name: 'Books',
-            url: '/'
+            url: '/books'
         },
         {
             name: 'Apps',
-            url: '/'
+            url: '/apps'
         }
     ];
 };
@@ -40,10 +40,10 @@ LandingPage.prototype.generate = function() {
     this.elements += `
                     </section>
                     <div class="landing-page-bottom">
-                    <p class="landing-page-bottom-p1">Stream 50 million songs ad‑free.</p>
-                    <p class="landing-page-bottom-p2">Our vision for television.</p>
-                    <p class="landing-page-bottom-p3">Get exclusive and original content.</p>
-                    <p class="landing-page-bottom-p4">Download your favorite apps.</p>
+                    <p class="landing-page-bottom1">Stream 50 million songs ad‑free.</p>
+                    <p class="landing-page-bottom2">Our vision for television.</p>
+                    <p class="landing-page-bottom3">Get exclusive and original content.</p>
+                    <p class="landing-page-bottom4">Download your favorite apps.</p>
                     </div>
     `;
     this.render();
@@ -53,17 +53,3 @@ LandingPage.prototype.generate = function() {
 LandingPage.prototype.render = function() {
     this.parentElement.innerHTML = this.elements;
 };
-
-// // Switch dark & light mode
-
-// const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-// function switchTheme(e) {
-//     if (e.target.checked) {
-//         document.documentElement.setAttribute('data-theme', 'dark');
-//     } else {
-//         document.documentElement.setAttribute('data-theme', 'light');
-//     }
-// }
-
-// toggleSwitch.addEventListener('change', switchTheme, false);

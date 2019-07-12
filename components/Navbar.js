@@ -14,7 +14,10 @@ Navbar.prototype.generate = function()  {
     this.links.forEach((link) => {
         this.elements += `
           <li>
-            <a href="#0" url=${link.url}> <img src="./img/apple-logo.svg" url=${link.url} alt"Logo Apple"><h2>${link.name}</h2></a>
+            <a href="#0"> 
+                <img src="./img/apple-logo.svg" url=${link.url} alt"Logo Apple">
+                <h2 url=${link.url}>${link.name}</h2>
+            </a>
           </li> 
         `;
     });

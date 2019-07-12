@@ -1,30 +1,29 @@
 'use strict';
 
-function MoviesPage(parentElement) {
+function AppsPage(parentElement) {
     this.parentElement = parentElement;
     this.elements = null;
-    this.movies = null;
+    this.apps = null;
     this.loading = null;
 };
 
-MoviesPage.prototype.generate = async function() {
+AppsPage.prototype.generate = async function() {
     this.loading = new Loading(this.parentElement);
     this.loading.generate();
 
     await this.conectToAPI();
     this.elements = `
     <header class="title" >
-      <h1>Easily find what
-      you want to watch.</h1>
+      <h1>Games that redefine games.</h1>
     </header>
     <section class="card-container">
 `;
-    this.movies.forEach((movie) => {
+    this.apps.forEach((app) => {
         this.elements += `
         <article class="card-album">
-          <img src="${movie.artworkUrl100}" alt="">
-          <h3>${movie.trackName}</h3>
-          <p>${movie.artistName}</p>
+          <img src="${app.artworkUrl100}" alt="">
+          <h3>${app.trackName}</h3>
+          <p>${app.artistName}</p>
         </article>
         `
     });
@@ -32,10 +31,10 @@ MoviesPage.prototype.generate = async function() {
     this.render();
 };
 
-MoviesPage.prototype.render = function() {
+AppsPage.prototype.render = function() {
     this.parentElement.innerHTML = this.elements;
 };
 
-MoviesPage.prototype.conectToAPI = async function() {
-    this.movies = await itunesAlbumServiceInstance.getAllMovies();
+AppsPage.prototype.conectToAPI = async function() {
+    this.apps = await itunesAlbumServiceInstance.getAllApps();
 };
