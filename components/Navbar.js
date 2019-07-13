@@ -8,7 +8,6 @@ function Navbar(parentElement, links, style) {
 };
 
 Navbar.prototype.generate = function()  {
-    //generar dinamicamente los elementos
     this.elements = `<nav>
                          <ul>`;
     this.links.forEach((link) => {
@@ -36,7 +35,6 @@ Navbar.prototype.generate = function()  {
 };
 
 Navbar.prototype.render = function()  {
-    //añadir elementos al DOM
     this.parentElement.innerHTML = this.elements;
 };
 
